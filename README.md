@@ -57,3 +57,4 @@ SERVIDOR👩‍💻
 
 1 Aula parada no 43:58 website
 2 Aula parada no 01:01:01 website
+3 Aula parada no 00:35:19 website
