@@ -58,3 +58,32 @@ SERVIDOR👩‍💻
 1 Aula parada no 43:58 website
 2 Aula parada no 01:01:01 website
 3 Aula parada no 00:35:19 website
+
+WEBSITE👩‍💻
+
+## COMANDOS
+
+### SETUP WEBSITE
+
+1 PASSO => VITE TEMPLATE APLICAÇÃO FRONT-END -> npm create vite@latest
+
+2 PASSO => ACESSAR A PASTA DO PROJETO -> npm install
+
+3 PASSO => RODAR PROJETO -> npm run dev
+
+4 PASSO => INSTALAÇÃO TAILWIND -> npm i tailwindcss postcss autoprefixer 
+                                  npx tailwindcss init -p
+
+        4.1 Criar src/styles/global.css
+
+        4.2 Adicionar essas linhas dentro do global.css
+            @tailwind base;
+            @tailwind components;
+            @tailwind utilities;
+
+        4.3 Em tailwind.config.cjs 
+            adicionar "./src/**/*.tsx" dentro de content
+
+        4.4 Adicionar import "./styles/global.css"; em App.tsx
+
+1 Aula parada no 00:58:03 website
