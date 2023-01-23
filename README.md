@@ -86,4 +86,12 @@ WEBSITE👩‍💻
 
         4.4 Adicionar import "./styles/global.css"; em App.tsx
 
+
+  5 PASSO => TRABALHANDO COM ÍCONES BIBLIOTECA -> npm i phosphor-react
+
+  6 PASSO => TRABALHAR COM DATAS USANDO A BIBLIOTECA -> npm i dayjs
+
+
+
 1 Aula parada no 00:58:03 website
+2 Aula parada no 01:34:16 website
