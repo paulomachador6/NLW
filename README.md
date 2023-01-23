@@ -34,3 +34,26 @@ SERVIDOR👩‍💻
   Visualizar o BD npx prisma studio
 
 9 PASSO => CONFIGURAR O CORS npm i @fastify/cors
+
+10 PASSO => CONFIGURAR PRISMA ERD npm i -D prisma-erd-generator @mermaid-js/mermaid-cli
+  incluir no arquivo schema.prisma
+
+  generator erd {
+  provider = "prisma-erd-generator"
+}
+   Comando para gerar o ERD.svg => npx prisma generate
+
+11 PASSO => TRABALHAR COM SEED PARA POPULAR DADOS NO BANCO => ACRESCENTAR NO package.json ao final do arquivo
+
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+
+  rodar o arquivo npx prisma db seed
+
+12 PASSO => INSTALAR ZOD => npm i zod
+
+13 PASSO => INSTALAR BIBLIOTECA => npm i dayjs
+
+1 Aula parada no 43:58 website
+2 Aula parada no 01:01:01 website
