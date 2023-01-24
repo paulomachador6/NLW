@@ -94,10 +94,13 @@ WEBSITE👩‍💻
   7 PASSO => TRABALHAR COM RADIX E SEUS COMPONENTES -> npm install @radix-ui/react-dialog MODAL
                                                        npm install @radix-ui/react-popover
 
-  * PASSO => TRABALHAR COM BIBLIOTECA CLSX -> npm i clsx
+  8 PASSO => TRABALHAR COM BIBLIOTECA CLSX -> npm i clsx
+
+  9 PASSO => TRABALHAR COM RADIX E SEUS COMPONENTES -> npm install @radix-ui/react-checkbox
 
 
 
 1 Aula parada no 00:58:03 website
 2 Aula parada no 01:34:16 website
 3 Aula parada no 01:25:32 website
+4 Aula parada no 00:32:22
