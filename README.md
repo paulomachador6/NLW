@@ -98,9 +98,10 @@ WEBSITE👩‍💻
 
   9 PASSO => TRABALHAR COM RADIX E SEUS COMPONENTES -> npm install @radix-ui/react-checkbox
 
+  10 PASSO => TRABALHAR COM A BIBLIOTECA AXIOS PARA COMUNICAÇÃO ENTRE O BACK E FRONT -> npm i axios
 
 
 1 Aula parada no 00:58:03 website
 2 Aula parada no 01:34:16 website
 3 Aula parada no 01:25:32 website
-4 Aula parada no 00:32:22
+4 Aula parada no 00:58:39 website
