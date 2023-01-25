@@ -106,3 +106,19 @@ WEBSITE👩‍💻
 3 Aula parada no 01:25:32 website
 4 Aula parada no 00:58:39 website
 5 Aula parada no 00:48:38 website
+
+MOBILE👩‍💻
+
+## COMANDOS
+
+### SETUP MOBILE
+
+1 PASSO => UTILIZAR O EXPO PARA CRIAR O PROJETO -> npx create-expo-app mobile --template
+
+2 PASSO => UTILIZAR AS SEGUINTES FONTES -> npx expo install expo-font @expo-google-fonts/inter
+
+3 PASSO =>
+
+4 PASSO =>
+
+5 PASSO =>
