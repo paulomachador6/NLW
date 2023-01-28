@@ -117,9 +117,113 @@ MOBILE👩‍💻
 
 2 PASSO => UTILIZAR AS SEGUINTES FONTES -> npx expo install expo-font @expo-google-fonts/inter
 
-3 PASSO =>
+3 PASSO => INSTLAR NATIVEWIND npm i nativewind  
+                              npm i tailwindcss --save-dev
+                              npx tailwindcss init
+            configurar o arquivo tailwind.config.js
 
-4 PASSO =>
+              /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./App.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: '#09090a',
+      },
+      fontFamily: {
+        regular: 'Inter_400Regular',
+        semibold: 'Inter_600SemiBold',
+        bold: 'Inter_700Bold',
+        extrabold: 'Inter_800ExtraBold'
+      }
+    },
+  },
+  plugins: [],
+}
 
-5 PASSO =>
-testes
+              após acrescentar no babel.config, 
+                  plugins: ['nativewind/babel'],
+
+
+
+4 PASSO => DENTRO DE SRC CRIAR UMA PASTA @TYPES E UM ARQUIVO app.d.ts
+                    CONTEÚDO DO ARQUIVO
+                              ///<reference types="nativewind/types" />
+            INSTALAR EXTENSÃO TAILWIND CSS INTELLISENSE
+
+5 PASSO => UTILIZAR A BIBLIOTECA PARA TRABALHAR COM SVG 
+                      -> npx expo install react-native-svg
+            BIBLIOTECA PARA TRABALHAR COM SVG COMO COMPONENTE
+                      -> npm i react-native-svg-transformer --save-dev
+
+
+6 PASSO => CRIAR UM ARQUIVO NA PASTA RAIZ CHAMADO metro.config.js
+              CONTEÚDO DO ARQUIVO ->
+              const { getDefaultConfig } = require("expo/metro-config");
+
+module.exports = (() => {
+  const config = getDefaultConfig(__dirname);
+
+  const { transformer, resolver } = config;
+
+  config.transformer = {
+    ...transformer,
+    babelTransformerPath: require.resolve("react-native-svg-transformer"),
+  };
+  config.resolver = {
+    ...resolver,
+    assetExts: resolver.assetExts.filter((ext) => ext !== "svg"),
+    sourceExts: [...resolver.sourceExts, "svg"],
+  };
+
+  return config;
+})();
+
+7 PASSO => TRABALHANDO COM SVG DENTRO DA PASTA @types criar o arquivo svg.d.ts
+                      ACRESCENTAR O CONTEÚDO 
+
+  declare module "*.svg" {
+  import React from 'react';
+  import { SvgProps } from "react-native-svg";
+  const content: React.FC<SvgProps>;
+  export default content;
+}
+
+8 PASSO => INSTALAR DAYJS -> npm install dayjs
+          CRIAR UMA PASTA LIB DENTRO DE SRC ARQUIVO dayjs.ts
+          CONTEÚDO DO ARQUIVO: 
+
+            import dayjs from 'dayjs';
+            import 'days/locale/pt-br';
+
+            dayjs.locale('pt-br');
+
+9 PASSO => CRIAR DENTRO DE SRC UMA PASTA UTILS, e o arquivo  generate-range-between-dates.ts
+            CONTEÚDO DO ARQUIVO: 
+
+            import dayjs from 'dayjs'
+
+            export function generateRangeDatesFromYearStart() {
+              const startDate = dayjs().startOf('year')
+              const endDate = new Date()
+
+              let dateRange = []
+              let compareDate = startDate
+
+              while (compareDate.isBefore(endDate)) {
+                dateRange.push(compareDate.toDate())
+                compareDate = compareDate.add(1, 'day')
+              }
+
+              return dateRange
+            }  
+
+
+
+10 PASSO =>
+
+
+11 PASSO =>
