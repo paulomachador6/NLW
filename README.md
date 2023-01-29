@@ -221,9 +221,16 @@ module.exports = (() => {
               return dateRange
             }  
 
+10 PASSO => TRABALHANDO COM NAVEGAÇÃO -> npm install @react-navigation/native
+      -> npx expo install react-native-screens react-native-safe-area-context
+      -> npm i @react-navigation/native-stack
 
+11 PASSO => CRIAR UMA PASTA DENTRO DE SRC CHAMADA routes com um arquivo app.routes.tsx e um arquivo index.ts
 
-10 PASSO =>
+12 PASSO => DECLARAR ROTAS ATRAVÉS DE DEFINIÇÃO, CRIAR DENTRO @TYPES UM ARQUIVO CHAMADO navigation.d.ts
 
+13 PASSO =>
 
-11 PASSO =>
+14 PASSO =>
+
+15 PASSO =>
