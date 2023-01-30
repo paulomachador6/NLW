@@ -234,6 +234,8 @@ module.exports = (() => {
 
 14 PASSO => INSTALAR O CLSX PARA TRABALHAR COM CLASSE npm i --save clsx
 
-15 PASSO =>
+15 PASSO => TRABALHAR COM ANIMAÇÕES -> npx expo install react-native-reanimated
+            NO ARQUIVO BABEL ADICIONAR 'react-native-reanimated/plugin'
+            RECOMENDAÇÃO RODAR PROJETO -> npx expo start --clear
 
 teste

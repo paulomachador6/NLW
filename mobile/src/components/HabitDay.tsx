@@ -1,10 +1,10 @@
 import { TouchableOpacity, Dimensions, TouchableOpacityProps } from 'react-native';
 import clsx from 'clsx';
-import dayjs from 'dayjs';
 
+import dayjs from 'dayjs';
 import { generateProgressPercentage } from '../utils/generate-progress-percentage';
 
-const WEEK_DAYS =7;
+const WEEK_DAYS = 7;
 const SCREEN_HORIZONTAL_PADDING = (32 * 2) / 5;
 
 export const DAY_MARGIN_BETWEEN = 8;
