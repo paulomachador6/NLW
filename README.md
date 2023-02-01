@@ -55,6 +55,9 @@ SERVIDOR👩‍💻
 
 13 PASSO => INSTALAR BIBLIOTECA -> npm i dayjs
 
+14 PASSO => TRABALHANDO COM NOTIFICAÇÕES -> npm i web-push
+                                            npm i @types/web-push -D
+
 1 Aula parada no 43:58 website
 2 Aula parada no 01:01:01 website
 3 Aula parada no 00:35:19 website
@@ -238,4 +241,6 @@ module.exports = (() => {
             NO ARQUIVO BABEL ADICIONAR 'react-native-reanimated/plugin'
             RECOMENDAÇÃO RODAR PROJETO -> npx expo start --clear
 
+
+16 PASSO => TRABALHAR COM NOTIFICAÇÕES -> npx expo install expo-notifications
 teste
